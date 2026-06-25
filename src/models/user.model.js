@@ -28,7 +28,6 @@ const UserSchema = mongoose.Schema({
         },
         publicid:{
             type: String,
-            required: true,
         },   
     },
     password:{
@@ -37,7 +36,7 @@ const UserSchema = mongoose.Schema({
     },
 }, 
     {
-        timestamp: true,
+        timestamps: true,
     },
 );
 
